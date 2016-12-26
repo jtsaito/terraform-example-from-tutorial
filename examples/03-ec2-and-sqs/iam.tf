@@ -2,7 +2,6 @@
 # allows instance to read/write from sqs queue
 # with temporary credentials for assumed role.
 
-
 resource "aws_iam_role_policy" "sqs_queue_messages_full_access_policy" {
     name = "sqs_queue_messages_full_access_policy"
     role = "${aws_iam_role.sqs_queue_messages_full_access_role.id}"
@@ -23,7 +22,6 @@ resource "aws_iam_role_policy" "sqs_queue_messages_full_access_policy" {
 EOF
 }
 
-
 resource "aws_iam_role" "sqs_queue_messages_full_access_role" {
     name = "sqs_queue_messages_full_access_role"
     assume_role_policy = <<EOF
@@ -42,7 +40,6 @@ resource "aws_iam_role" "sqs_queue_messages_full_access_role" {
 }
 EOF
 }
-
 
 resource "aws_iam_instance_profile" "sqs_queue_messages_full_access_profile" {
     name = "sqs_queue_messages_full_access_profile"
