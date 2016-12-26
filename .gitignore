@@ -4,3 +4,5 @@
 
 # Secrets 
 examples/02-one-instance-with-input-variables/terraform.tfvars
+examples/03-ec2-and-sqs/terraform.tfvars
+
