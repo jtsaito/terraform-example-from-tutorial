@@ -1,3 +1,6 @@
 # Compiled files
 *.tfstate
 *.tfstate.backup
+
+# Secrets 
+examples/02-one-instance-with-input-variables/terraform.tfvars
